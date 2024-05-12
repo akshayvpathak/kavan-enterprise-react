@@ -30,7 +30,7 @@ const Hero = () => {
               </p>
             </div>
 
-            <div className="animate_right hidden md:w-1/2 lg:block" >
+            <div className="animate_right  md:w-1/2 " >
               <div className="relative 2xl:-mr-7.5">
                 <Image
                   src="/images/shape/shape-01.png"
