@@ -42,14 +42,30 @@
 
 @layer utilities {
   /* Chrome, Safari and Opera */
-  .no-scrollbar::-webkit-scrollbar {
+
+  ::-webkit-scrollbar {
+    height: 12px;
+    width: 7px;
+    background: whitesmoke;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: grey;
+    -webkit-border-radius: 1ex;
+  }
+  
+  ::-webkit-scrollbar-corner {
+    background: grey;
+  }
+  
+  /* .no-scrollbar::-webkit-scrollbar {
     display: none;
   }
 
   .no-scrollbar {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-  }
+    -ms-overflow-style: none;  IE and Edge 
+    scrollbar-width: none;   Firefox 
+  } */
 
   .img-white {
     filter: invert(0%) sepia(96%) saturate(15%) hue-rotate(249deg)
@@ -126,7 +142,7 @@ pre {
   @apply bg-stroke text-black dark:bg-blackho dark:text-white;
 }
 
-body {
+/* body {
   background: #f5f5f5;
   color: rgba(#fff, 0.75);
 }
@@ -139,4 +155,4 @@ header {
 }
 .dropdown::before {
   background: rgb(18, 18, 18);
-}
+} */

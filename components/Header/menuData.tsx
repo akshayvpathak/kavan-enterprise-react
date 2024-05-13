@@ -20,7 +20,7 @@ const menuData: Menu[] = [
         path: "/product/ceramic-one-piece",
       },
       {
-        id: 33,
+        id: 32,
         title: "Wash Basin",
         newTab: false,
         path: "/product/ceramic-wash-basin",
