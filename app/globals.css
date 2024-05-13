@@ -125,3 +125,18 @@ pre {
 .active-tab {
   @apply bg-stroke text-black dark:bg-blackho dark:text-white;
 }
+
+body {
+  background: #f5f5f5;
+  color: rgba(#fff, 0.75);
+}
+footer {
+  background: rgb(18, 18, 18);
+}
+
+header {
+  background: rgb(18, 18, 18);
+}
+.dropdown::before {
+  background: rgb(18, 18, 18);
+}
