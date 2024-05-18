@@ -30,16 +30,55 @@ const Hero = () => {
               </p>
             </div>
 
-            <div className="sm:w-full   md:w-1/2 ">
-              <Image
-                src="/images/custom/make-in-india.png"
-                alt="Make In India"
-                height={400}
-                width={400}
-              />
+            <div className=" sm:w-full  md:w-1/2 ">
+              <div className="relative 2xl:-mr-7.5">
+                <Image
+                  src="/images/shape/shape-01.png"
+                  alt="shape"
+                  width={46}
+                  height={246}
+                  className="absolute -left-11.5 top-0"
+                />
+                <Image
+                  src="/images/shape/shape-02.svg"
+                  alt="shape"
+                  width={36.9}
+                  height={36.7}
+                  className="absolute bottom-0 right-0 z-10"
+                />
+                <Image
+                  src="/images/shape/shape-03.svg"
+                  alt="shape"
+                  width={21.64}
+                  height={21.66}
+                  className="absolute -right-6.5 bottom-0 z-1"
+                />
+                <div className="  aspect-[700/444] w-full  bg-transparent">
+                  <Image
+                    className="shadow-solid-l"
+                    src="/images/custom/make-in-india.png"
+                    alt="Make In India"
+                    fill
+                  />
+                  <Image
+                    className="hidden shadow-solid-l "
+                    src="/images/custom/make-in-india.png"
+                    alt="Make In India"
+                    fill
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
+      </section>
+      <section className="visible md:invisible">
+        <Image
+          src="/images/custom/make-in-india.png"
+          alt="Make In India"
+          height={400}
+          width={400}
+        />
       </section>
     </>
   );
