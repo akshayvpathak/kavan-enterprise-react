@@ -15,13 +15,13 @@ const Hero = () => {
         <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
           <div className="flex lg:items-center lg:gap-8 xl:gap-32.5">
             <div className=" md:w-1/2">
-              <h1 className="mb-5 pr-16 text-3xl font-bold text-black dark:text-white xl:text-hero ">
+              <h1 className="text-linkhover mb-5 pr-16 text-3xl font-bold  xl:text-hero ">
                 Welcome to
-                <span className="relative inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg dark:before:bg-titlebgdark ">
+                <span className="text-linkhover relative  inline-block">
                   Kavan Enterprise
                 </span>
               </h1>
-              <p>
+              <p className="text-white">
                 At Kavan Enterprise, we take pride in our meticulous attention
                 to detail and dedication to producing superior products. Whether
                 you're looking for beautifully crafted ceramic homeware or
@@ -30,7 +30,7 @@ const Hero = () => {
               </p>
             </div>
 
-            <div className="animate_right  md:w-1/2 " >
+            <div className="animate_right  md:w-1/2 ">
               <div className="relative 2xl:-mr-7.5">
                 <Image
                   src="/images/shape/shape-01.png"
@@ -53,7 +53,7 @@ const Hero = () => {
                   height={21.66}
                   className="absolute -right-6.5 bottom-0 z-1"
                 />
-                <div className=" relative aspect-[700/444] w-full  bg-[#EBFAFD]">
+                <div className=" relative aspect-[700/444] w-full  bg-transparent">
                   <Image
                     className="shadow-solid-l dark:hidden"
                     src="/images/custom/make-in-india.png"

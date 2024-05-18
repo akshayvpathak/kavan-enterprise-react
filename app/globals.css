@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,7 +9,7 @@
   @apply h-2.5 w-2.5 bg-stroke opacity-100;
 }
 .testimonial-01 .swiper-pagination-bullet-active {
-  @apply w-5 rounded-full bg-primary;
+  @apply w-5 rounded-full bg-black;
 }
 
 .testimonial-01 .swiper-pagination {
@@ -27,9 +28,9 @@
 
 @layer components {
   .dropdown {
-    @apply -left-7.5 mt-2 hidden min-w-max flex-col gap-4 rounded-md border border-stroke bg-white px-8 py-5 shadow-solid-13 duration-300 ease-in dark:border-strokedark dark:bg-black xl:invisible xl:absolute
+    @apply -left-7.5 mt-2 hidden min-w-max flex-col gap-4 rounded-md border border-stroke bg-black  px-8 py-5 shadow-solid-13 duration-300 ease-in dark:border-strokedark xl:invisible xl:absolute
     xl:mt-0 xl:flex xl:w-[250px] xl:translate-y-10 xl:opacity-0
-    xl:before:absolute xl:before:-top-1.5 xl:before:left-10 xl:before:h-3 xl:before:w-3 xl:before:rotate-45 xl:before:border-l xl:before:border-t xl:before:border-stroke xl:before:bg-white xl:group-hover:visible xl:group-hover:translate-y-6.5 
+    xl:before:absolute xl:before:-top-1.5 xl:before:left-10 xl:before:h-3 xl:before:w-3 xl:before:rotate-45 xl:before:border-l xl:before:border-t xl:before:border-stroke xl:before:bg-black xl:group-hover:visible xl:group-hover:translate-y-6.5 
     xl:group-hover:opacity-100 xl:dark:before:border-strokedark xl:dark:before:bg-black;
   }
 }
@@ -48,16 +49,16 @@
     width: 7px;
     background: whitesmoke;
   }
-  
+
   ::-webkit-scrollbar-thumb {
     background: grey;
     -webkit-border-radius: 1ex;
   }
-  
+
   ::-webkit-scrollbar-corner {
     background: grey;
   }
-  
+
   /* .no-scrollbar::-webkit-scrollbar {
     display: none;
   }
@@ -142,17 +143,10 @@ pre {
   @apply bg-stroke text-black dark:bg-blackho dark:text-white;
 }
 
-/* body {
-  background: #f5f5f5;
-  color: rgba(#fff, 0.75);
+body {
+  background: linear-gradient(72deg, #000 18%, #2ee1d5 198.11%);
+  font-family: "'Urbanist','sans-serif'";
 }
-footer {
-  background: rgb(18, 18, 18);
+.card-container {
+  background: rgba(255, 255, 255, 0.1);
 }
-
-header {
-  background: rgb(18, 18, 18);
-}
-.dropdown::before {
-  background: rgb(18, 18, 18);
-} */

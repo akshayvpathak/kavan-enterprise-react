@@ -12,7 +12,7 @@ module.exports = {
   darkMode: "class",
   theme: {
     fontFamily: {
-      inter: ["Inter", "sans-serif"],
+      inter: ["Urbanist", "sans-serif"],
     },
     extend: {
       colors: {
@@ -26,7 +26,6 @@ module.exports = {
         titlebgdark: "#46495A",
         btndark: "#292E45",
         white: "#FFFFFF",
-        black: "#181C31",
         blackho: "#2C3149",
         blacksection: "#1C2136",
         primary: "#006BFF",
@@ -37,6 +36,9 @@ module.exports = {
         alabaster: "#FBFBFB",
         zumthor: "#EDF5FF",
         socialicon: "#D1D8E0",
+        white: "#ffffff",
+        linkhover: "#2EE1D5",
+        black: "#000",
       },
       fontSize: {
         metatitle: ["12px", "20px"],

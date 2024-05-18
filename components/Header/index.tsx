@@ -29,7 +29,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed left-0 top-0 z-99999 w-full py-7 ${
+      className={`fixed left-0 top-0 z-99999 w-full bg-black py-7 ${
         stickyMenu ? " !py-4 shadow transition duration-100 " : ""
       }`}
     >
@@ -108,12 +108,12 @@ const Header = () => {
                     <>
                       <button
                         onClick={() => setDropdownToggler(!dropdownToggler)}
-                        className="flex cursor-pointer items-center justify-between gap-3 hover:text-primary"
+                        className="hover:text-linkhover flex cursor-pointer items-center justify-between gap-3 font-medium text-white	"
                       >
                         {menuItem.title}
                         <span>
                           <svg
-                            className="h-3 w-3 cursor-pointer fill-waterloo group-hover:fill-primary"
+                            className="group-hover:fill-linkhover h-3 w-3 cursor-pointer fill-waterloo"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512"
                           >
@@ -123,12 +123,13 @@ const Header = () => {
                       </button>
 
                       <ul
-                        className={`dropdown ${
-                          dropdownToggler ? "flex" : ""
-                        } bg-[#2b3149]`}
+                        className={`dropdown ${dropdownToggler ? "flex" : ""} `}
                       >
                         {menuItem.submenu.map((item, key) => (
-                          <li key={key} className="hover:text-primary">
+                          <li
+                            key={key}
+                            className="hover:text-linkhover font-medium text-white	"
+                          >
                             <Link href={item.path || "#"}>{item.title}</Link>
                           </li>
                         ))}
@@ -139,8 +140,8 @@ const Header = () => {
                       href={`${menuItem.path}`}
                       className={
                         pathUrl === menuItem.path
-                          ? "text-primary hover:text-primary"
-                          : "hover:text-primary"
+                          ? "hover:text-linkhover text-linkhover font-medium 	"
+                          : "hover:text-linkhover font-medium text-white	"
                       }
                     >
                       {menuItem.title}
