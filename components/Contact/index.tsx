@@ -155,7 +155,7 @@ const Contact = () => {
                 <h3 className="text-linkhover  mb-4 font-medium dark:text-white">
                   Email Address
                 </h3>
-                <p className="text-white ">
+                <p className="text-white hover:text-linkhover">
                   <a href="#">yourmail@domainname.com</a>
                 </p>
               </div>
@@ -163,7 +163,7 @@ const Contact = () => {
                 <h4 className="text-linkhover  mb-4 font-medium ">
                   Phone Number
                 </h4>
-                <p className="text-white ">
+                <p className="text-white hover:text-linkhover">
                   <a href="#">+009 42334 6343 843</a>
                 </p>
               </div>
