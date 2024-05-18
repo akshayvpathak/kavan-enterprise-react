@@ -13,11 +13,11 @@ const Hero = () => {
     <>
       <section className="overflow-hidden pb-20 pt-35 md:pt-40 xl:pb-25 xl:pt-46">
         <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
-          <div className="flex lg:items-center lg:gap-8 xl:gap-32.5">
-            <div className=" w-full md:w-1/2">
-              <h1 className="text-linkhover mb-5 pr-16 text-3xl font-bold  xl:text-hero ">
+          <div className="flex flex-col lg:flex-row lg:items-center lg:gap-8 xl:gap-32.5">
+            <div className="w-full md:w-1/2">
+              <h1 className="text-linkhover mb-5 pr-16 text-3xl font-bold xl:text-hero">
                 Welcome to
-                <span className="text-linkhover relative  inline-block">
+                <span className="text-linkhover relative inline-block">
                   Kavan Enterprise
                 </span>
               </h1>
@@ -30,7 +30,7 @@ const Hero = () => {
               </p>
             </div>
 
-            <div className="w-full  md:w-1/2 ">
+            <div className="mt-10 w-full md:mt-0 md:w-1/2">
               <div className="relative 2xl:-mr-7.5">
                 <Image
                   src="/images/shape/shape-01.png"
@@ -53,18 +53,14 @@ const Hero = () => {
                   height={21.66}
                   className="absolute -right-6.5 bottom-0 z-1"
                 />
-                <div className="  aspect-[700/444] w-full  bg-transparent">
+                <div className="aspect-w-16 aspect-h-9 w-full bg-transparent">
                   <Image
-                    className="shadow-solid-l"
+                    className=" shadow-solid-l"
                     src="/images/custom/make-in-india.png"
                     alt="Make In India"
-                    fill
-                  />
-                  <Image
-                    className="hidden shadow-solid-l "
-                    src="/images/custom/make-in-india.png"
-                    alt="Make In India"
-                    fill
+                    objectFit="cover"
+                    width={600}
+                    height={600}
                   />
                 </div>
               </div>
