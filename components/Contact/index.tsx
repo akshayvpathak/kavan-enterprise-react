@@ -20,8 +20,8 @@ const Contact = () => {
     <>
       {/* <!-- ===== Contact Start ===== --> */}
       <section id="support" className=" card-container px-4 md:px-8 2xl:px-0">
-        <div className="relative mx-auto max-w-c-1390 px-7.5 pt-10 lg:px-15 lg:pt-15 xl:px-20 xl:pt-20">
-          <div className="absolute left-0 top-0 -z-1 h-2/3 w-full rounded-lg  dark:bg-gradient-to-t dark:to-[#252A42]"></div>
+        <div className="relative mx-auto max-w-c-1390 px-10 py-7.5 lg:px-15 lg:pt-15 xl:px-20 xl:pt-20">
+          <div className="absolute left-0 top-0 -z-1 h-2/3 w-full rounded-lg  "></div>
           <div className="absolute bottom-[-255px] left-0 -z-1 h-full w-full">
             <Image
               src="./images/shape/shape-dotted-light.svg"
@@ -56,7 +56,7 @@ const Contact = () => {
               viewport={{ once: true }}
               className="animate_top w-full rounded-lg bg-black p-7.5 shadow-solid-8 dark:border dark:border-strokedark dark:bg-black md:w-3/5 lg:w-3/4 xl:p-15"
             >
-              <h2 className="text-linkhover mb-15 text-3xl font-semibold dark:text-white ">
+              <h2 className="text-linkhover mb-15 text-3xl font-semibold  ">
                 Send a message
               </h2>
 
@@ -100,11 +100,11 @@ const Contact = () => {
                 <div className="flex flex-wrap gap-4 xl:justify-between ">
                   <button
                     aria-label="send message"
-                    className="inline-flex items-center gap-2.5 rounded-full bg-black px-6 py-3 font-medium text-white duration-300 ease-in-out hover:bg-blackho dark:bg-btndark"
+                    className="hover:bg-linkhover inline-flex items-center gap-2.5 rounded-full bg-white px-6 py-3 font-medium text-black duration-300 ease-in-out dark:bg-btndark"
                   >
                     Send Message
                     <svg
-                      className="fill-white"
+                      className="fill-black"
                       width="14"
                       height="14"
                       viewBox="0 0 14 14"
@@ -144,24 +144,26 @@ const Contact = () => {
               </h2>
 
               <div className="5 mb-7">
-                <h3 className="mb-4 text-metatitle3 font-medium text-white dark:text-white">
+                <h3 className="text-linkhover  mb-4 font-medium dark:text-white">
                   Our Loaction
                 </h3>
-                <p>290 Maryam Springs 260, Courbevoie, Paris, France</p>
+                <p className="text-white ">
+                  290 Maryam Springs 260, Courbevoie, Paris, France
+                </p>
               </div>
               <div className="5 mb-7">
-                <h3 className="mb-4 text-metatitle3 font-medium text-white dark:text-white">
+                <h3 className="text-linkhover  mb-4 font-medium dark:text-white">
                   Email Address
                 </h3>
-                <p>
+                <p className="text-white ">
                   <a href="#">yourmail@domainname.com</a>
                 </p>
               </div>
               <div>
-                <h4 className="mb-4 text-metatitle3 font-medium text-white dark:text-white">
+                <h4 className="text-linkhover  mb-4 font-medium ">
                   Phone Number
                 </h4>
-                <p>
+                <p className="text-white ">
                   <a href="#">+009 42334 6343 843</a>
                 </p>
               </div>
