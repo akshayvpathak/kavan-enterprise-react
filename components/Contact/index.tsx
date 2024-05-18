@@ -147,24 +147,22 @@ const Contact = () => {
                 <h3 className="text-linkhover  mb-4 font-medium dark:text-white">
                   Our Loaction
                 </h3>
-                <p className="text-white ">
-                  290 Maryam Springs 260, Courbevoie, Paris, France
-                </p>
+                <p className="text-white ">Thangadh</p>
               </div>
               <div className="5 mb-7">
                 <h3 className="text-linkhover  mb-4 font-medium dark:text-white">
                   Email Address
                 </h3>
-                <p className="text-white hover:text-linkhover">
-                  <a href="#">yourmail@domainname.com</a>
+                <p className="hover:text-linkhover text-white">
+                  <a href="#">kavanparmar1212@gmail.com</a>
                 </p>
               </div>
               <div>
                 <h4 className="text-linkhover  mb-4 font-medium ">
                   Phone Number
                 </h4>
-                <p className="text-white hover:text-linkhover">
-                  <a href="#">+009 42334 6343 843</a>
+                <p className="hover:text-linkhover text-white">
+                  <a href="#">+91 95589 45002</a>
                 </p>
               </div>
             </motion.div>

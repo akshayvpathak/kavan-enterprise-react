@@ -1,0 +1,9 @@
+Sitemap: https://kavanenterprise.com/sitemap.xml
+
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Block all crawlers for
+User-agent: *
+Disallow: /404
