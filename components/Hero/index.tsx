@@ -54,7 +54,6 @@ const Hero = () => {
               />
               <div className="aspect-w-16 aspect-h-9 w-full bg-transparent">
                 <Image
-                  className=" shadow-solid-l"
                   src="/images/custom/make-in-india.png"
                   alt="Make In India"
                   objectFit="cover"
