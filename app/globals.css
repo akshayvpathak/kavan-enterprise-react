@@ -68,11 +68,6 @@
     -ms-overflow-style: none;  IE and Edge 
     scrollbar-width: none;   Firefox 
   } */
-
-  .img-white {
-    filter: invert(0%) sepia(96%) saturate(15%) hue-rotate(249deg)
-      brightness(100%) contrast(105%);
-  }
 }
 
 .blog-details-docs {
