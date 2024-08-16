@@ -6,8 +6,7 @@ import Image from "next/image"; // Assuming you are using Next.js
 const products = [
   {
     id: 1,
-    image:
-      "https://ui.aceternity.com/_next/image?url=%2Fjordans.webp&w=640&q=75",
+    image: "/images/products/achar-jar.jpeg",
     alt: "Diya Making Machine",
     title: "Diya Making Machine",
     description: "High-efficiency machine for manufacturing clay diyas.",
@@ -15,8 +14,7 @@ const products = [
   },
   {
     id: 2,
-    image:
-      "https://ui.aceternity.com/_next/image?url=%2Fjordans.webp&w=640&q=75",
+    image: "/images/products/achar-jar.jpeg",
     alt: "Kullad Making Machine",
     title: "Kullad Making Machine",
     description: "Automatic machine for creating traditional kullads.",
@@ -24,8 +22,7 @@ const products = [
   },
   {
     id: 3,
-    image:
-      "https://ui.aceternity.com/_next/image?url=%2Fjordans.webp&w=640&q=75",
+    image: "/images/products/achar-jar.jpeg",
     alt: "Suraki Machine",
     title: "Suraki Machine",
     description: "Efficient machine for producing suraki.",
@@ -33,8 +30,7 @@ const products = [
   },
   {
     id: 4,
-    image:
-      "https://ui.aceternity.com/_next/image?url=%2Fjordans.webp&w=640&q=75",
+    image: "/images/products/achar-jar.jpeg",
     alt: "Hydraulic Diya Making Machine",
     title: "Hydraulic Diya Making Machine",
     description: "Advanced hydraulic machine for manufacturing diyas.",
@@ -42,8 +38,7 @@ const products = [
   },
   {
     id: 5,
-    image:
-      "https://ui.aceternity.com/_next/image?url=%2Fjordans.webp&w=640&q=75",
+    image: "/images/products/achar-jar.jpeg",
     alt: "Mitti Diya",
     title: "Mitti Diya",
     description: "Traditional clay diyas for festive occasions.",
@@ -51,8 +46,7 @@ const products = [
   },
   {
     id: 6,
-    image:
-      "https://ui.aceternity.com/_next/image?url=%2Fjordans.webp&w=640&q=75",
+    image: "/images/products/achar-jar.jpeg",
     alt: "Matka",
     title: "Matka",
     description: "Handcrafted clay matka for water storage.",
@@ -60,8 +54,7 @@ const products = [
   },
   {
     id: 7,
-    image:
-      "https://ui.aceternity.com/_next/image?url=%2Fjordans.webp&w=640&q=75",
+    image: "/images/products/achar-jar.jpeg",
     alt: "Kullad",
     title: "Kullad",
     description: "Traditional clay kullad for serving tea.",
@@ -69,8 +62,7 @@ const products = [
   },
   {
     id: 8,
-    image:
-      "https://ui.aceternity.com/_next/image?url=%2Fjordans.webp&w=640&q=75",
+    image: "/images/products/achar-jar.jpeg",
     alt: "Ceramic Mug",
     title: "Ceramic Mug",
     description: "Stylish ceramic mugs for everyday use.",
@@ -78,8 +70,7 @@ const products = [
   },
   {
     id: 9,
-    image:
-      "https://ui.aceternity.com/_next/image?url=%2Fjordans.webp&w=640&q=75",
+    image: "/images/products/achar-jar.jpeg",
     alt: "One Piece",
     title: "One Piece",
     description: "Ceramic one piece for decoration.",
@@ -87,8 +78,7 @@ const products = [
   },
   {
     id: 10,
-    image:
-      "https://ui.aceternity.com/_next/image?url=%2Fjordans.webp&w=640&q=75",
+    image: "/images/products/achar-jar.jpeg",
     alt: "Heater Plate",
     title: "Heater Plate",
     description: "Efficient ceramic heater plates.",
@@ -96,8 +86,7 @@ const products = [
   },
   {
     id: 11,
-    image:
-      "https://ui.aceternity.com/_next/image?url=%2Fjordans.webp&w=640&q=75",
+    image: "/images/products/achar-jar.jpeg",
     alt: "Ceramic Foundary Filter",
     title: "Ceramic Foundary Filter",
     description: "High-quality ceramic foundary filters.",
@@ -105,8 +94,7 @@ const products = [
   },
   {
     id: 12,
-    image:
-      "https://ui.aceternity.com/_next/image?url=%2Fjordans.webp&w=640&q=75",
+    image: "/images/products/achar-jar.jpeg",
     alt: "Achar Jar",
     title: "Achar Jar",
     description: "Ceramic jars for storing pickles.",
@@ -114,8 +102,7 @@ const products = [
   },
   {
     id: 13,
-    image:
-      "https://ui.aceternity.com/_next/image?url=%2Fjordans.webp&w=640&q=75",
+    image: "/images/products/achar-jar.jpeg",
     alt: "Kunda",
     title: "Kunda",
     description: "Traditional ceramic kunda.",
@@ -123,8 +110,7 @@ const products = [
   },
   {
     id: 14,
-    image:
-      "https://ui.aceternity.com/_next/image?url=%2Fjordans.webp&w=640&q=75",
+    image: "/images/products/achar-jar.jpeg",
     alt: "Ceramic Toys",
     title: "Ceramic Toys",
     description: "Handmade ceramic toys for kids.",
@@ -132,8 +118,7 @@ const products = [
   },
   {
     id: 15,
-    image:
-      "https://ui.aceternity.com/_next/image?url=%2Fjordans.webp&w=640&q=75",
+    image: "/images/products/achar-jar.jpeg",
     alt: "Agarbatti Stand",
     title: "Agarbatti Stand",
     description: "Elegant ceramic agarbatti stands.",
@@ -141,8 +126,7 @@ const products = [
   },
   {
     id: 16,
-    image:
-      "https://ui.aceternity.com/_next/image?url=%2Fjordans.webp&w=640&q=75",
+    image: "/images/products/achar-jar.jpeg",
     alt: "Ceramic Damru",
     title: "Ceramic Damru",
     description: "Decorative ceramic damrus.",
@@ -150,8 +134,7 @@ const products = [
   },
   {
     id: 17,
-    image:
-      "https://ui.aceternity.com/_next/image?url=%2Fjordans.webp&w=640&q=75",
+    image: "/images/products/achar-jar.jpeg",
     alt: "Tulsi Kyara",
     title: "Tulsi Kyara",
     description: "Ceramic tulsi kyaras for homes.",
@@ -159,8 +142,7 @@ const products = [
   },
   {
     id: 18,
-    image:
-      "https://ui.aceternity.com/_next/image?url=%2Fjordans.webp&w=640&q=75",
+    image: "/images/products/achar-jar.jpeg",
     alt: "Decorative Diyas",
     title: "Decorative Diyas",
     description: "Beautifully designed decorative diyas.",
@@ -168,8 +150,7 @@ const products = [
   },
   {
     id: 19,
-    image:
-      "https://ui.aceternity.com/_next/image?url=%2Fjordans.webp&w=640&q=75",
+    image: "/images/products/achar-jar.jpeg",
     alt: "Decorative Matki",
     title: "Decorative Matki",
     description: "Artistic decorative matkis.",
@@ -177,8 +158,7 @@ const products = [
   },
   {
     id: 20,
-    image:
-      "https://ui.aceternity.com/_next/image?url=%2Fjordans.webp&w=640&q=75",
+    image: "/images/products/achar-jar.jpeg",
     alt: "Cultivator Blade",
     title: "Cultivator Blade (Farva)",
     description: "Durable cultivator blades for agriculture.",
@@ -217,7 +197,7 @@ const ProductCard: FC<{
 const ProductList = () => {
   return (
     <div className="pt-4">
-      <div className="mx-auto mt-4 w-fit rounded-full bg-black px-6 py-2 text-base text-zinc-50 shadow-xl">
+      <div className="l mx-auto mt-4 w-fit rounded-full bg-black px-6 py-2 text-base text-zinc-50">
         ✨ Range Of Products ✨
       </div>
 
