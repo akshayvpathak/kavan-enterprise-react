@@ -41,7 +41,6 @@ const config = {
         alabaster: "#FBFBFB",
         zumthor: "#EDF5FF",
         socialicon: "#D1D8E0",
-        white: "#ffffff",
         linkhover: "#6bc048",
         black: "#000",
       },
