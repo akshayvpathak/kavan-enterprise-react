@@ -9,7 +9,7 @@ import menuData from "./menuData";
 
 const Header = () => {
   const [navigationOpen, setNavigationOpen] = useState(false);
-  const [dropdownToggler, setDropdownToggler] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState(null); // State to manage which dropdown is open
   const [stickyMenu, setStickyMenu] = useState(false);
 
   const pathUrl = usePathname();
@@ -25,7 +25,12 @@ const Header = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", handleStickyMenu);
-  });
+    return () => window.removeEventListener("scroll", handleStickyMenu); // Cleanup
+  }, []);
+
+  const handleDropdownToggle = (index) => {
+    setOpenDropdown(openDropdown === index ? null : index);
+  };
 
   return (
     <header
@@ -61,7 +66,7 @@ const Header = () => {
             <span className="relative block h-5.5 w-5.5 cursor-pointer">
               <span className="absolute right-0 block h-full w-full">
                 <span
-                  className={`delay-[0] relative left-0 top-0 my-1 block h-0.5 rounded-sm bg-linkhover duration-200 ease-in-out dark:bg-white ${
+                  className={`relative left-0 top-0 my-1 block h-0.5 rounded-sm bg-linkhover delay-[0] duration-200 ease-in-out dark:bg-white ${
                     !navigationOpen ? "!w-full delay-300" : "w-0"
                   }`}
                 ></span>
@@ -79,7 +84,7 @@ const Header = () => {
               <span className="du-block absolute right-0 h-full w-full rotate-45">
                 <span
                   className={`absolute left-2.5 top-0 block h-full w-0.5 rounded-sm bg-linkhover delay-300 duration-200 ease-in-out dark:bg-white ${
-                    !navigationOpen ? "delay-[0] !h-0" : "h-full"
+                    !navigationOpen ? "!h-0 delay-[0]" : "h-full"
                   }`}
                 ></span>
                 <span
@@ -102,12 +107,15 @@ const Header = () => {
         >
           <nav>
             <ul className="flex flex-col gap-5  xl:flex-row xl:items-center  xl:gap-10">
-              {menuData.map((menuItem, key) => (
-                <li key={key} className={menuItem.submenu && "group relative"}>
+              {menuData.map((menuItem, index) => (
+                <li
+                  key={index}
+                  className={menuItem.submenu && "group relative"}
+                >
                   {menuItem.submenu ? (
                     <>
                       <button
-                        onClick={() => setDropdownToggler(!dropdownToggler)}
+                        onClick={() => handleDropdownToggle(index)}
                         className="flex cursor-pointer items-center justify-between gap-3 font-medium text-white hover:text-linkhover	"
                       >
                         {menuItem.title}
@@ -123,7 +131,9 @@ const Header = () => {
                       </button>
 
                       <ul
-                        className={`dropdown ${dropdownToggler ? "flex" : ""} `}
+                        className={`dropdown ${
+                          openDropdown === index ? "flex" : ""
+                        }`}
                       >
                         {menuItem.submenu.map((item, key) => (
                           <li
@@ -151,16 +161,10 @@ const Header = () => {
               ))}
             </ul>
           </nav>
-
-          <div className="mt-7 flex items-center gap-6 xl:mt-0">
-            {/* <ThemeToggler /> */}
-          </div>
         </div>
       </div>
     </header>
   );
 };
-
-// w-full delay-300
 
 export default Header;
