@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { ChevronDown, ChevronUp } from "lucide-react";
 
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
@@ -120,13 +121,11 @@ const Header = () => {
                       >
                         {menuItem.title}
                         <span>
-                          <svg
-                            className="h-3 w-3 cursor-pointer fill-waterloo group-hover:fill-linkhover"
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 512 512"
-                          >
-                            <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
-                          </svg>
+                          {openDropdown === index ? (
+                            <ChevronUp className="h-3 w-3 cursor-pointer  group-hover:text-linkhover" />
+                          ) : (
+                            <ChevronDown className="h-3 w-3 cursor-pointer  group-hover:text-linkhover" />
+                          )}
                         </span>
                       </button>
 
