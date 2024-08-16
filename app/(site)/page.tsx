@@ -5,6 +5,7 @@ import FunFact from "@/components/FunFact";
 import Contact from "@/components/Contact";
 import Testimonial from "@/components/Testimonial";
 import Location from "@/components/Location";
+import Feedback from "@/components/Testimonial";
 
 export const metadata: Metadata = {
   title: "Kavan Enterprise",
@@ -92,6 +93,7 @@ export default function Home() {
     <main>
       <Hero />
 
+      <Feedback />
       <Location />
       <Contact />
     </main>

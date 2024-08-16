@@ -1,88 +1,60 @@
 "use client";
-import SectionHeader from "../Common/SectionHeader";
 
-import { Autoplay, Pagination } from "swiper";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import { Swiper, SwiperSlide } from "swiper/react";
+import React from "react";
 
-import { motion } from "framer-motion";
-import SingleTestimonial from "./SingleTestimonial";
-import { testimonialData } from "./testimonialData";
+import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
 
-const Testimonial = () => {
+export default function Feedback() {
   return (
-    <>
-      <section>
-        <div className="mx-auto max-w-c-1315 px-4 md:px-8 xl:px-0">
-          {/* <!-- Section Title Start --> */}
-          <div className="animate_top mx-auto text-center">
-            <SectionHeader
-              headerInfo={{
-                title: `TESTIMONIALS`,
-                subtitle: `Client’s Testimonials`,
-                description: "",
-              }}
-            />
-          </div>
-          {/* <!-- Section Title End --> */}
+    <div>
+      <div className="pt-4">
+        <div className="mx-auto mt-4 w-fit rounded-full bg-black px-6 py-2 text-base text-zinc-50 shadow-xl">
+          ✨ Testimonials ✨
         </div>
-
-        <motion.div
-          variants={{
-            hidden: {
-              opacity: 0,
-              y: -20,
-            },
-
-            visible: {
-              opacity: 1,
-              y: 0,
-            },
-          }}
-          initial="hidden"
-          whileInView="visible"
-          transition={{ duration: 1, delay: 0.1 }}
-          viewport={{ once: true }}
-          className="animate_top mx-auto mt-15 max-w-c-1235 px-4 md:px-8 xl:mt-20 xl:px-0"
-        >
-          {/* <!-- Slider main container --> */}
-          <div className="swiper testimonial-01 mb-20 pb-22.5">
-            {/* <!-- Additional required wrapper --> */}
-            <Swiper
-              spaceBetween={50}
-              slidesPerView={2}
-              autoplay={{
-                delay: 2500,
-                disableOnInteraction: false,
-              }}
-              pagination={{
-                clickable: true,
-              }}
-              modules={[Autoplay, Pagination]}
-              breakpoints={{
-                // when window width is >= 640px
-                0: {
-                  slidesPerView: 1,
-                },
-                // when window width is >= 768px
-                768: {
-                  slidesPerView: 2,
-                },
-              }}
-            >
-              {testimonialData.map((review) => (
-                <SwiperSlide key={review?.id}>
-                  <SingleTestimonial review={review} />
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </div>
-        </motion.div>
-      </section>
-    </>
+        <h5 className="mt-3 text-center text-3xl text-neutral-700">
+          Client’s Testimonials
+        </h5>
+      </div>
+      <div className=" relative flex h-[20rem] flex-col items-center justify-center overflow-hidden rounded-md bg-transparent antialiased dark:bg-black">
+        <InfiniteMovingCards
+          items={testimonials}
+          direction="right"
+          speed="slow"
+        />
+      </div>
+    </div>
   );
-};
+}
 
-export default Testimonial;
+const testimonials = [
+  {
+    quote:
+      "The diya making machine from Kavan Enterprise has revolutionized our production process. The efficiency and quality of the diyas are unparalleled. Highly recommend!",
+    name: "Aarav Patel",
+    title: "Head of Production, Bright Lights Inc.",
+  },
+  {
+    quote:
+      "Kavan Enterprise's mitti diyas are a staple in our store during festive seasons. The craftsmanship and durability are top-notch, making them a favorite among our customers.",
+    name: "Meera Shah",
+    title: "Owner, Tradition & Trends",
+  },
+  {
+    quote:
+      "As a farmer, I rely heavily on high-quality agricultural products. Kavan Enterprise has consistently provided us with the best tools and machinery, boosting our productivity and yield.",
+    name: "Rohan Mehta",
+    title: "Agriculturist, Green Acres Farm",
+  },
+  {
+    quote:
+      "The ceramic products from Kavan Enterprise are exquisite. Their attention to detail and commitment to quality are evident in every piece. Our clients love the uniqueness and durability of these products.",
+    name: "Sanjana Kapoor",
+    title: "Interior Designer, Elegant Spaces",
+  },
+  {
+    quote:
+      "Investing in the diya making machine from Kavan Enterprise was one of the best decisions for our business. The machine is easy to operate and has significantly improved our production speed.",
+    name: "Vikram Desai",
+    title: "Owner, Desai Handicrafts",
+  },
+];
