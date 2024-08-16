@@ -95,7 +95,7 @@ export default function Home() {
       <Hero />
       <ProductList />
       <Feedback />
-      <Location />
+      {/* <Location /> */}
       <Contact />
     </main>
   );
