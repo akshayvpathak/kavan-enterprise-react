@@ -99,11 +99,11 @@ const Contact = () => {
               <div className="flex flex-wrap gap-4 xl:justify-between ">
                 <button
                   aria-label="send message"
-                  className="bg-orange hover:bg-orange inline-flex items-center gap-2.5 rounded-full px-6 py-3 font-medium text-white duration-300 ease-in-out "
+                  className="bg-orange hover:bg-orange inline-flex items-center gap-2.5 rounded-full px-6 py-3 font-medium text-white duration-300 ease-in-out"
                 >
                   Send Message
                   <svg
-                    className="fill-white"
+                    className=" fill-white"
                     width="14"
                     height="14"
                     viewBox="0 0 14 14"
@@ -150,13 +150,13 @@ const Contact = () => {
               <h3 className="text-charcoal  mb-4 font-medium ">
                 Email Address
               </h3>
-              <p className="text-charcoal">
+              <p className="text-charcoal hover:text-linkhover">
                 <a href="#">kavanparmar1212@gmail.com</a>
               </p>
             </div>
             <div>
               <h4 className="text-charcoal  mb-4 font-medium ">Phone Number</h4>
-              <p className="text-charcoal">
+              <p className="text-charcoal hover:text-linkhover">
                 <a href="#">+91 95589 45002</a>
               </p>
             </div>

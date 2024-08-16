@@ -42,7 +42,7 @@ const config = {
         zumthor: "#EDF5FF",
         socialicon: "#D1D8E0",
         white: "#ffffff",
-        linkhover: "#2EE1D5",
+        linkhover: "#6bc048",
         black: "#000",
       },
       fontSize: {
