@@ -34,7 +34,7 @@ const machineryProducts = [
   },
   {
     id: 20,
-    image: "/images/products/achar-jar.jpeg",
+    image: "/images/products/farva.jpg",
     alt: "Cultivator Blade",
     title: "Cultivator Blade (Farva)",
     description: "Durable cultivator blades for agriculture.",
