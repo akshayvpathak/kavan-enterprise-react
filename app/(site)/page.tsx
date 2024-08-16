@@ -1,10 +1,6 @@
 import { Metadata } from "next";
 import Hero from "@/components/Hero";
-import About from "@/components/About";
-import FunFact from "@/components/FunFact";
 import Contact from "@/components/Contact";
-import Testimonial from "@/components/Testimonial";
-import Location from "@/components/Location";
 import Feedback from "@/components/Testimonial";
 import { ProductList } from "@/components/ProductList";
 
@@ -95,7 +91,6 @@ export default function Home() {
       <Hero />
       <ProductList />
       <Feedback />
-      {/* <Location /> */}
       <Contact />
     </main>
   );
