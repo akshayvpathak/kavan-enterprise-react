@@ -64,13 +64,13 @@ const Contact = () => {
                 <input
                   type="text"
                   placeholder="Full name"
-                  className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-white focus-visible:outline-none   lg:w-1/2"
+                  className="w-full border-b border-stroke bg-transparent pb-3.5 text-white focus:border-waterloo focus:placeholder:text-white focus-visible:outline-none   lg:w-1/2"
                 />
 
                 <input
                   type="email"
                   placeholder="Email address"
-                  className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-white focus-visible:outline-none   lg:w-1/2"
+                  className="w-full border-b border-stroke bg-transparent pb-3.5 text-white focus:border-waterloo focus:placeholder:text-white focus-visible:outline-none   lg:w-1/2"
                 />
               </div>
 
@@ -78,13 +78,13 @@ const Contact = () => {
                 <input
                   type="text"
                   placeholder="Subject"
-                  className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-white focus-visible:outline-none   lg:w-1/2"
+                  className="w-full border-b border-stroke bg-transparent pb-3.5 text-white focus:border-waterloo focus:placeholder:text-white focus-visible:outline-none   lg:w-1/2"
                 />
 
                 <input
                   type="text"
                   placeholder="Phone number"
-                  className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-white focus-visible:outline-none   lg:w-1/2"
+                  className="w-full border-b border-stroke bg-transparent pb-3.5 text-white focus:border-waterloo focus:placeholder:text-white focus-visible:outline-none   lg:w-1/2"
                 />
               </div>
 
@@ -92,18 +92,18 @@ const Contact = () => {
                 <textarea
                   placeholder="Message"
                   rows={4}
-                  className="w-full border-b border-stroke bg-transparent focus:border-waterloo focus:placeholder:text-white focus-visible:outline-none  "
+                  className="w-full border-b border-stroke bg-transparent text-white focus:border-waterloo focus:placeholder:text-white focus-visible:outline-none  "
                 ></textarea>
               </div>
 
               <div className="flex flex-wrap gap-4 xl:justify-between ">
                 <button
                   aria-label="send message"
-                  className="inline-flex items-center gap-2.5 rounded-full bg-white px-6 py-3 font-medium text-black duration-300 ease-in-out hover:bg-linkhover dark:bg-btndark"
+                  className="bg-orange hover:bg-orange inline-flex items-center gap-2.5 rounded-full px-6 py-3 font-medium text-white duration-300 ease-in-out "
                 >
                   Send Message
                   <svg
-                    className="fill-black"
+                    className="fill-white"
                     width="14"
                     height="14"
                     viewBox="0 0 14 14"

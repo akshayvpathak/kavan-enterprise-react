@@ -31,6 +31,7 @@ const config = {
         btndark: "#292E45",
         white: "#FFFFFF",
         blackho: "#2C3149",
+        orange: "#FA8C27",
         blacksection: "#1C2136",
         primary: "#202A43",
         primaryho: "#0063EC",
