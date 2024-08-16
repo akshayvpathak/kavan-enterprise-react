@@ -54,10 +54,6 @@ const Hero: React.FC = () => {
               />
               <div className="aspect-w-16 aspect-h-9 w-full bg-transparent">
                 <Image
-<<<<<<< Updated upstream
-=======
-                  className="shadow-solid-l"
->>>>>>> Stashed changes
                   src="/images/custom/make-in-india.png"
                   alt="Make In India"
                   objectFit="cover"
