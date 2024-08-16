@@ -9,7 +9,7 @@ const menuData: Menu[] = [
   },
   {
     id: 3,
-    title: "Machinery",
+    title: "Machinery Products",
     newTab: false,
     submenu: [
       {
@@ -36,11 +36,17 @@ const menuData: Menu[] = [
         newTab: false,
         path: "/product/hydraulic-diya-making-machine",
       },
+      {
+        id: 35,
+        title: "Cultivator Blade (Farva)",
+        newTab: false,
+        path: "/product/cultivator-blade-farva",
+      },
     ],
   },
   {
     id: 4,
-    title: "Red Mitti",
+    title: "Clay Items",
     newTab: false,
     submenu: [
       {
@@ -61,11 +67,23 @@ const menuData: Menu[] = [
         newTab: false,
         path: "/product/kullad",
       },
+      {
+        id: 44,
+        title: "Decorative Diyas",
+        newTab: false,
+        path: "/product/decorative-diyas",
+      },
+      {
+        id: 45,
+        title: "Decorative Matki",
+        newTab: false,
+        path: "/product/decorative-matki",
+      },
     ],
   },
   {
     id: 5,
-    title: "Ceramic",
+    title: "Ceramic Products",
     newTab: false,
     submenu: [
       {
@@ -127,38 +145,6 @@ const menuData: Menu[] = [
         title: "Tulsi Kyara",
         newTab: false,
         path: "/product/tulsi-kyara",
-      },
-    ],
-  },
-  {
-    id: 6,
-    title: "Decorative",
-    newTab: false,
-    submenu: [
-      {
-        id: 61,
-        title: "Decorative Diyas",
-        newTab: false,
-        path: "/product/decorative-diyas",
-      },
-      {
-        id: 62,
-        title: "Decorative Matki",
-        newTab: false,
-        path: "/product/decorative-matki",
-      },
-    ],
-  },
-  {
-    id: 7,
-    title: "Agriculture",
-    newTab: false,
-    submenu: [
-      {
-        id: 71,
-        title: "Cultivator Blade (Farva)",
-        newTab: false,
-        path: "/product/cultivator-blade-farva",
       },
     ],
   },
