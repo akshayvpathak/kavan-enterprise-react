@@ -54,9 +54,9 @@ const Contact = () => {
               whileInView="visible"
               transition={{ duration: 1, delay: 0.1 }}
               viewport={{ once: true }}
-              className="animate_top w-full rounded-lg bg-black p-7.5 shadow-solid-8 dark:border dark:border-strokedark dark:bg-black md:w-3/5 lg:w-3/4 xl:p-15"
+              className="animate_top w-full rounded-lg bg-primary p-7.5 shadow-solid-8 dark:border dark:border-strokedark dark:bg-black md:w-3/5 lg:w-3/4 xl:p-15"
             >
-              <h2 className="text-linkhover mb-15 text-3xl font-semibold  ">
+              <h2 className="mb-15 text-3xl font-semibold text-linkhover  ">
                 Send a message
               </h2>
 
@@ -65,13 +65,13 @@ const Contact = () => {
                   <input
                     type="text"
                     placeholder="Full name"
-                    className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
+                    className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-white focus-visible:outline-none   lg:w-1/2"
                   />
 
                   <input
                     type="email"
                     placeholder="Email address"
-                    className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
+                    className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-white focus-visible:outline-none   lg:w-1/2"
                   />
                 </div>
 
@@ -79,13 +79,13 @@ const Contact = () => {
                   <input
                     type="text"
                     placeholder="Subject"
-                    className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
+                    className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-white focus-visible:outline-none   lg:w-1/2"
                   />
 
                   <input
                     type="text"
                     placeholder="Phone number"
-                    className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
+                    className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-white focus-visible:outline-none   lg:w-1/2"
                   />
                 </div>
 
@@ -93,14 +93,14 @@ const Contact = () => {
                   <textarea
                     placeholder="Message"
                     rows={4}
-                    className="w-full border-b border-stroke bg-transparent focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white"
+                    className="w-full border-b border-stroke bg-transparent focus:border-waterloo focus:placeholder:text-white focus-visible:outline-none  "
                   ></textarea>
                 </div>
 
                 <div className="flex flex-wrap gap-4 xl:justify-between ">
                   <button
                     aria-label="send message"
-                    className="hover:bg-linkhover inline-flex items-center gap-2.5 rounded-full bg-white px-6 py-3 font-medium text-black duration-300 ease-in-out dark:bg-btndark"
+                    className="inline-flex items-center gap-2.5 rounded-full bg-white px-6 py-3 font-medium text-black duration-300 ease-in-out hover:bg-linkhover dark:bg-btndark"
                   >
                     Send Message
                     <svg
@@ -139,29 +139,29 @@ const Contact = () => {
               viewport={{ once: true }}
               className="animate_top w-full md:w-2/5 md:p-7.5 lg:w-[26%] xl:pt-15"
             >
-              <h2 className="text-linkhover mb-12.5 text-3xl font-semibold dark:text-white xl:text-sectiontitle2">
+              <h2 className="mb-12.5 text-3xl font-semibold text-linkhover dark:text-white xl:text-sectiontitle2">
                 Find us
               </h2>
 
               <div className="5 mb-7">
-                <h3 className="text-linkhover  mb-4 font-medium dark:text-white">
+                <h3 className="mb-4  font-medium text-linkhover dark:text-white">
                   Our Loaction
                 </h3>
                 <p className="text-white ">Thangadh</p>
               </div>
               <div className="5 mb-7">
-                <h3 className="text-linkhover  mb-4 font-medium dark:text-white">
+                <h3 className="mb-4  font-medium text-linkhover dark:text-white">
                   Email Address
                 </h3>
-                <p className="hover:text-linkhover text-white">
+                <p className="text-white hover:text-linkhover">
                   <a href="#">kavanparmar1212@gmail.com</a>
                 </p>
               </div>
               <div>
-                <h4 className="text-linkhover  mb-4 font-medium ">
+                <h4 className="mb-4  font-medium text-linkhover ">
                   Phone Number
                 </h4>
-                <p className="hover:text-linkhover text-white">
+                <p className="text-white hover:text-linkhover">
                   <a href="#">+91 95589 45002</a>
                 </p>
               </div>
