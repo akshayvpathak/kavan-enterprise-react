@@ -28,7 +28,7 @@ module.exports = {
         white: "#FFFFFF",
         blackho: "#2C3149",
         blacksection: "#1C2136",
-        primary: "#006BFF",
+        primary: "#202A43",
         primaryho: "#0063EC",
         meta: "#20C5A8",
         waterloo: "#757693",

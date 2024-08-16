@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className=" border-stroke bg-black ">
+    <footer className=" border-stroke bg-primary ">
       <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
         {/* <!-- Footer Top --> */}
         <div className="py-5 lg:py-10">
@@ -49,7 +49,7 @@ const Footer = () => {
               </p>
               <a
                 href="#"
-                className="hover:text-linkhover text-itemtitle font-medium text-white"
+                className="text-itemtitle font-medium text-white hover:text-linkhover"
               >
                 kavanparmar1212@gmail.com
               </a>
@@ -74,7 +74,7 @@ const Footer = () => {
                 viewport={{ once: true }}
                 className="animate_top"
               >
-                <h4 className="mb-5 text-itemtitle2 font-medium text-black dark:text-white">
+                <h4 className="mb-5 text-itemtitle2 font-medium text-white dark:text-white">
                   Quick Links
                 </h4>
 
@@ -82,7 +82,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="hover:text-linkhover mb-3 inline-block text-white"
+                      className="mb-3 inline-block text-white hover:text-linkhover"
                     >
                       Home
                     </a>
@@ -90,7 +90,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="hover:text-linkhover mb-3 inline-block text-white"
+                      className="mb-3 inline-block text-white hover:text-linkhover"
                     >
                       About Us
                     </a>
@@ -98,7 +98,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="hover:text-linkhover mb-3 inline-block text-white"
+                      className="mb-3 inline-block text-white hover:text-linkhover"
                     >
                       Contact Us
                     </a>
@@ -133,7 +133,7 @@ const Footer = () => {
                     <li>
                       <a
                         href="#"
-                        className="hover:text-linkhover mb-3 inline-block text-white"
+                        className="mb-3 inline-block text-white hover:text-linkhover"
                       >
                         One Piece
                       </a>
@@ -141,7 +141,7 @@ const Footer = () => {
                     <li>
                       <a
                         href="#"
-                        className="hover:text-linkhover mb-3 inline-block text-white"
+                        className="mb-3 inline-block text-white hover:text-linkhover"
                       >
                         Wash Basin
                       </a>
@@ -149,7 +149,7 @@ const Footer = () => {
                     <li>
                       <a
                         href="#"
-                        className="hover:text-linkhover mb-3 inline-block text-white"
+                        className="mb-3 inline-block text-white hover:text-linkhover"
                       >
                         Mug
                       </a>
@@ -184,17 +184,17 @@ const Footer = () => {
           >
             <ul className="flex items-center gap-8">
               <li>
-                <a href="#" className="hover:text-linkhover text-white">
+                <a href="#" className="text-white hover:text-linkhover">
                   English
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-linkhover text-white">
+                <a href="#" className="text-white hover:text-linkhover">
                   Privacy Policy
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-linkhover text-white">
+                <a href="#" className="text-white hover:text-linkhover">
                   Support
                 </a>
               </li>
@@ -247,7 +247,7 @@ const Footer = () => {
               <li>
                 <a href="#" aria-label="social icon">
                   <svg
-                    className="hover:fill-linkhover fill-[#D1D8E0] transition-all duration-300"
+                    className="fill-[#D1D8E0] transition-all duration-300 hover:fill-linkhover"
                     width="24"
                     height="24"
                     viewBox="0 0 24 24"
@@ -271,7 +271,7 @@ const Footer = () => {
               <li>
                 <a href="#" aria-label="social icon">
                   <svg
-                    className="hover:fill-linkhover fill-[#D1D8E0] transition-all duration-300"
+                    className="fill-[#D1D8E0] transition-all duration-300 hover:fill-linkhover"
                     width="24"
                     height="24"
                     viewBox="0 0 24 24"

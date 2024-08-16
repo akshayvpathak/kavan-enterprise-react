@@ -29,7 +29,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed left-0 top-0 z-99999 w-full bg-black py-7 ${
+      className={`fixed left-0 top-0 z-99999 w-full bg-primary py-7 ${
         stickyMenu ? " !py-4 shadow transition duration-100 " : ""
       }`}
     >
@@ -61,29 +61,29 @@ const Header = () => {
             <span className="relative block h-5.5 w-5.5 cursor-pointer">
               <span className="absolute right-0 block h-full w-full">
                 <span
-                  className={`bg-linkhover relative left-0 top-0 my-1 block h-0.5 rounded-sm delay-[0] duration-200 ease-in-out dark:bg-white ${
+                  className={`relative left-0 top-0 my-1 block h-0.5 rounded-sm bg-linkhover delay-[0] duration-200 ease-in-out dark:bg-white ${
                     !navigationOpen ? "!w-full delay-300" : "w-0"
                   }`}
                 ></span>
                 <span
-                  className={`bg-linkhover relative left-0 top-0 my-1 block h-0.5 rounded-sm delay-150 duration-200 ease-in-out dark:bg-white ${
+                  className={`relative left-0 top-0 my-1 block h-0.5 rounded-sm bg-linkhover delay-150 duration-200 ease-in-out dark:bg-white ${
                     !navigationOpen ? "delay-400 !w-full" : "w-0"
                   }`}
                 ></span>
                 <span
-                  className={`bg-linkhover relative left-0 top-0 my-1 block h-0.5 rounded-sm delay-200 duration-200 ease-in-out dark:bg-white ${
+                  className={`relative left-0 top-0 my-1 block h-0.5 rounded-sm bg-linkhover delay-200 duration-200 ease-in-out dark:bg-white ${
                     !navigationOpen ? "!w-full delay-500" : "w-0"
                   }`}
                 ></span>
               </span>
               <span className="du-block absolute right-0 h-full w-full rotate-45">
                 <span
-                  className={`bg-linkhover absolute left-2.5 top-0 block h-full w-0.5 rounded-sm delay-300 duration-200 ease-in-out dark:bg-white ${
+                  className={`absolute left-2.5 top-0 block h-full w-0.5 rounded-sm bg-linkhover delay-300 duration-200 ease-in-out dark:bg-white ${
                     !navigationOpen ? "!h-0 delay-[0]" : "h-full"
                   }`}
                 ></span>
                 <span
-                  className={`delay-400 bg-linkhover absolute left-0 top-2.5 block h-0.5 w-full rounded-sm duration-200 ease-in-out dark:bg-white ${
+                  className={`delay-400 absolute left-0 top-2.5 block h-0.5 w-full rounded-sm bg-linkhover duration-200 ease-in-out dark:bg-white ${
                     !navigationOpen ? "!h-0 delay-200" : "h-0.5"
                   }`}
                 ></span>
@@ -108,12 +108,12 @@ const Header = () => {
                     <>
                       <button
                         onClick={() => setDropdownToggler(!dropdownToggler)}
-                        className="hover:text-linkhover flex cursor-pointer items-center justify-between gap-3 font-medium text-white	"
+                        className="flex cursor-pointer items-center justify-between gap-3 font-medium text-white hover:text-linkhover	"
                       >
                         {menuItem.title}
                         <span>
                           <svg
-                            className="group-hover:fill-linkhover h-3 w-3 cursor-pointer fill-waterloo"
+                            className="h-3 w-3 cursor-pointer fill-waterloo group-hover:fill-linkhover"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512"
                           >
@@ -128,7 +128,7 @@ const Header = () => {
                         {menuItem.submenu.map((item, key) => (
                           <li
                             key={key}
-                            className="hover:text-linkhover font-medium text-white	"
+                            className="font-medium text-white hover:text-linkhover	"
                           >
                             <Link href={item.path || "#"}>{item.title}</Link>
                           </li>
@@ -140,8 +140,8 @@ const Header = () => {
                       href={`${menuItem.path}`}
                       className={
                         pathUrl === menuItem.path
-                          ? "hover:text-linkhover text-linkhover font-medium 	"
-                          : "hover:text-linkhover font-medium text-white	"
+                          ? "font-medium text-linkhover hover:text-linkhover 	"
+                          : "font-medium text-white hover:text-linkhover	"
                       }
                     >
                       {menuItem.title}
