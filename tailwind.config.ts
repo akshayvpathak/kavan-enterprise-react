@@ -22,6 +22,7 @@ const config = {
         current: "currentColor",
         transparent: "transparent",
         stroke: "#EEEEEE",
+        charcoal: "#36454F",
         strokedark: "#2D2F40",
         hoverdark: "#252A42",
         titlebg: "#ADFFF8",
