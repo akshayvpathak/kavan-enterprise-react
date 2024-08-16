@@ -2,7 +2,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
-import Location from "../Location";
 
 const Contact = () => {
   /**
