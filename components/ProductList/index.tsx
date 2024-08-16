@@ -176,7 +176,7 @@ const ProductCard: FC<{
   };
 }> = ({ product }) => {
   return (
-    <div className="mx-auto w-[15rem] rounded-[22px] bg-white p-4 dark:bg-zinc-900 sm:p-10 md:w-[17rem]">
+    <div className="mx-auto w-[15rem] rounded-[22px] border border-border bg-white p-4 dark:bg-zinc-900 sm:p-10 md:w-[17rem]">
       <Image
         src={product.image}
         alt={product.alt}
@@ -205,7 +205,7 @@ const ProductList = () => {
         {products.map((product) => (
           <div
             key={product.id}
-            className="w-full p-2 text-center sm:w-1/2 md:w-1/3"
+            className="w-full p-2 text-center sm:w-1/2 md:w-1/3 lg:w-1/4"
           >
             <ProductCard product={product} />
           </div>
