@@ -162,7 +162,7 @@ const ProductCard: FC<{
   };
 }> = ({ product }) => {
   return (
-    <div className="mx-auto flex h-full w-[18rem] max-w-full flex-col rounded-[22px] border border-border bg-white p-4 dark:bg-zinc-900 sm:p-10 md:w-[20rem]">
+    <div className="border-border mx-auto flex h-full w-[18rem] max-w-full cursor-pointer flex-col rounded-[22px] border bg-white p-4 dark:bg-zinc-900 sm:p-10 md:w-[20rem]">
       <Image
         src={product.image}
         alt={product.alt}
@@ -178,7 +178,7 @@ const ProductCard: FC<{
           {product.description}
         </p>
       </div>
-      <button className="bg-orange hover:bg-orange mt-auto transform rounded-full px-12 py-2  font-bold tracking-widest text-white transition-colors duration-200 hover:scale-105">
+      <button className="mt-auto transform rounded-full bg-orange px-12 py-2 font-bold  tracking-widest text-white transition-colors duration-200 hover:scale-105 hover:bg-orange">
         Get Quotes
       </button>
     </div>
@@ -191,7 +191,7 @@ const ProductList = () => {
       <div className="l mx-auto mt-4 w-fit rounded-full bg-black px-6 py-2 text-base text-zinc-50">
         ✨ Range Of Products ✨
       </div>
-      <div className="text-charcoal mb-2 ml-4 mt-4 text-3xl  font-bold">
+      <div className="mb-2 ml-4 mt-4 text-3xl font-bold  text-charcoal">
         Machinery Products
       </div>
 
@@ -205,7 +205,7 @@ const ProductList = () => {
           </div>
         ))}
       </div>
-      <div className="text-charcoal mb-2 ml-4 mt-4 text-3xl font-bold">
+      <div className="mb-2 ml-4 mt-4 text-3xl font-bold text-charcoal">
         Clay Items
       </div>
 
@@ -219,7 +219,7 @@ const ProductList = () => {
           </div>
         ))}
       </div>
-      <div className="text-charcoal mb-2 ml-4 mt-4 text-3xl  font-bold">
+      <div className="mb-2 ml-4 mt-4 text-3xl font-bold  text-charcoal">
         Ceramic Products
       </div>
 

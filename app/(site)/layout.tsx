@@ -10,7 +10,6 @@ import "../globals.css";
 const inter = Urbanist({ subsets: ["latin"] });
 
 import ToasterContext from "../context/ToastContext";
-import Script from "next/script";
 
 export default function RootLayout({
   children,

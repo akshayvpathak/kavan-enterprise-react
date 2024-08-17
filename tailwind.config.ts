@@ -33,7 +33,7 @@ const config = {
         blackho: "#2C3149",
         orange: "#FA8C27",
         blacksection: "#1C2136",
-        primary: "#202A43",
+        primary: "#1d2939",
         primaryho: "#0063EC",
         meta: "#20C5A8",
         waterloo: "#757693",
