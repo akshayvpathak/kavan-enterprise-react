@@ -10,6 +10,7 @@ import "../globals.css";
 const inter = Urbanist({ subsets: ["latin"] });
 
 import ToasterContext from "../context/ToastContext";
+import Script from "next/script";
 
 export default function RootLayout({
   children,
@@ -19,6 +20,22 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.className}`}>
+        <Script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=G-LHN7121V89`}
+        />
+        <Script
+          id="gtag-init"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-LHN7121V89');
+          `,
+          }}
+        />
         <ThemeProvider
           enableSystem={false}
           attribute="class"
