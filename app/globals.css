@@ -48,11 +48,11 @@
   ::-webkit-scrollbar {
     height: 12px;
     width: 7px;
-    background: whitesmoke;
+    background: transparent;
   }
 
   ::-webkit-scrollbar-thumb {
-    background: grey;
+    background: #1d2939;
     -webkit-border-radius: 1ex;
   }
 
