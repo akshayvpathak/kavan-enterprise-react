@@ -19,7 +19,7 @@ const Contact = () => {
   return (
     <section
       id="support"
-      className=" mt-4  bg-slate-50 px-4 pt-4 md:px-8 2xl:px-0"
+      className=" mt-4  bg-mainBg px-4 pt-4 md:px-8 2xl:px-0"
     >
       <div className="mx-auto w-fit rounded-full bg-black px-6 py-2 text-base text-zinc-50 shadow-xl">
         ✨ Contact Us ✨
@@ -60,7 +60,7 @@ const Contact = () => {
             viewport={{ once: true }}
             className="animate_top w-full rounded-lg bg-primary p-7.5 shadow-solid-8 dark:border dark:border-strokedark dark:bg-black md:w-3/5 lg:w-3/4 xl:p-15"
           >
-            <h2 className="mb-15 text-3xl font-semibold text-linkhover  ">
+            <h2 className="mb-15 text-3xl font-semibold text-white  ">
               Send a message
             </h2>
 
@@ -104,7 +104,7 @@ const Contact = () => {
               <div className="flex flex-wrap gap-4 xl:justify-between ">
                 <button
                   aria-label="send message"
-                  className="bg-orange hover:bg-orange inline-flex items-center gap-2.5 rounded-full px-6 py-3 font-medium text-white duration-300 ease-in-out"
+                  className="hover:bg-btnHover inline-flex items-center gap-2.5 rounded-full bg-orange px-6 py-3 font-medium text-white duration-300 ease-in-out"
                 >
                   Send Message
                   <svg
@@ -143,16 +143,16 @@ const Contact = () => {
             viewport={{ once: true }}
             className="animate_top w-full md:w-2/5 md:p-7.5 lg:w-[26%] xl:pt-15"
           >
-            <h2 className="text-charcoal mb-12.5 text-3xl font-semibold  xl:text-sectiontitle2">
+            <h2 className="mb-12.5 text-3xl font-semibold text-charcoal  xl:text-sectiontitle2">
               Find us
             </h2>
 
             <div className="5 mb-7">
-              <h3 className="text-charcoal  mb-4 font-medium ">Our Loaction</h3>
+              <h3 className="mb-4  font-medium text-charcoal ">Our Loaction</h3>
               <p className="text-charcoal ">Thangadh</p>
             </div>
             <div className="5 mb-7">
-              <h3 className="text-charcoal  mb-4 font-medium ">
+              <h3 className="mb-4  font-medium text-charcoal ">
                 Email Address
               </h3>
               <p className="text-charcoal hover:text-linkhover">
@@ -160,7 +160,7 @@ const Contact = () => {
               </p>
             </div>
             <div>
-              <h4 className="text-charcoal  mb-4 font-medium ">Phone Number</h4>
+              <h4 className="mb-4  font-medium text-charcoal ">Phone Number</h4>
               <p className="text-charcoal hover:text-linkhover">
                 <a href="#">+91 95589 45002</a>
               </p>

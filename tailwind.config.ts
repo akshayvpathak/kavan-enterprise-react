@@ -31,7 +31,8 @@ const config = {
         btndark: "#292E45",
         white: "#FFFFFF",
         blackho: "#2C3149",
-        orange: "#FA8C27",
+        orange: "#ee7322",
+        btnHover: "#ffa300",
         blacksection: "#1C2136",
         primary: "#202A43",
         primaryho: "#0063EC",
@@ -41,8 +42,9 @@ const config = {
         alabaster: "#FBFBFB",
         zumthor: "#EDF5FF",
         socialicon: "#D1D8E0",
-        linkhover: "#6bc048",
+        linkhover: "#ffa300",
         black: "#000",
+        mainBg: "#EEEFF3"
       },
       fontSize: {
         metatitle: ["12px", "20px"],
