@@ -51,7 +51,7 @@ export const ProductSlider: FC<{
         {images.map((src) => {
           return (
             <SwiperSlide>
-              <div className="rounded-lg border border-orange p-4">
+              <div className="cursor-pointer rounded-lg border border-orange p-4">
                 <Image height={75} alt="product" width={75} src={src} />
               </div>
             </SwiperSlide>
