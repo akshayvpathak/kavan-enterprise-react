@@ -36,11 +36,12 @@ export default function ProductCard({ product }: ProductCardProps) {
         </p>
       </div>
       <button
-        className="mt-auto transform rounded-full bg-orange px-12 py-2 font-bold  tracking-widest text-white transition-colors duration-200 hover:scale-105 hover:bg-btnHover"
+        className="mt-auto transform rounded-full bg-orange px-8 py-2 font-bold tracking-widest text-white transition-transform duration-200 hover:scale-105 hover:bg-btnHover sm:px-10 md:px-12 lg:px-16"
         onClick={handleOpenDialog}
       >
         Get Quotes
       </button>
+
       <QuoteDialog
         product={product}
         isOpen={open}
@@ -56,7 +57,7 @@ const ProductList = () => {
       <div className="l mx-auto mt-4 w-fit rounded-full bg-black px-6 py-2 text-base text-zinc-50">
         ✨ Range Of Products ✨
       </div>
-      <div className="mb-2 ml-4 mt-4 text-3xl font-bold  text-charcoal">
+      <div className="mb-2 ml-4 mt-10 text-3xl font-bold  text-charcoal">
         Machinery Products
       </div>
 
@@ -64,13 +65,13 @@ const ProductList = () => {
         {machineryProducts.map((product) => (
           <div
             key={product.id}
-            className="w-full p-2 text-center sm:w-1/2 md:w-1/3 lg:w-1/4"
+            className="w-full p-2 text-center sm:w-1/2 md:w-1/2 lg:w-1/5"
           >
             <ProductCard product={product} />
           </div>
         ))}
       </div>
-      <div className="mb-2 ml-4 mt-4 text-3xl font-bold text-charcoal">
+      <div className="mb-2 ml-4 mt-10 text-3xl font-bold text-charcoal">
         Clay Items
       </div>
 
@@ -78,13 +79,13 @@ const ProductList = () => {
         {clayItems.map((product) => (
           <div
             key={product.id}
-            className="w-full p-2 text-center sm:w-1/2 md:w-1/3 lg:w-1/4"
+            className="w-full p-2 text-center sm:w-1/2 md:w-1/2 lg:w-1/5"
           >
             <ProductCard product={product} />
           </div>
         ))}
       </div>
-      <div className="mb-2 ml-4 mt-4 text-3xl font-bold  text-charcoal">
+      <div className="mb-2 ml-4 mt-10 text-3xl font-bold  text-charcoal">
         Ceramic Products
       </div>
 
@@ -92,7 +93,7 @@ const ProductList = () => {
         {ceramicProducts.map((product) => (
           <div
             key={product.id}
-            className="w-full p-2 text-center sm:w-1/2 md:w-1/3 lg:w-1/4"
+            className="w-full p-2 text-center sm:w-1/2 md:w-1/2 lg:w-1/5"
           >
             <ProductCard product={product} />
           </div>
