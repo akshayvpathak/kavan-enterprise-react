@@ -18,17 +18,18 @@ export default function ProductCard({ product }: ProductCardProps) {
   const [open, setOpen] = useState(false);
 
   const handleOpenDialog = () => setOpen(true);
+
   return (
-    <div className="border-border mx-auto flex h-full w-[18rem] max-w-full flex-col rounded-[22px] border bg-white p-4 dark:bg-zinc-900 sm:p-10 md:w-[20rem]">
+    <div className="mx-auto flex h-full w-full max-w-xs flex-col rounded-2xl border border-gray-200 bg-white p-4 shadow-md dark:bg-zinc-900 sm:max-w-sm md:max-w-md lg:max-w-xs">
       <Image
         src={product.image}
         alt={product.alt}
-        height="400"
-        width="400"
-        className="object-contain"
+        height={300}
+        width={300}
+        className="mx-auto object-contain"
       />
-      <div className="flex flex-grow flex-col">
-        <p className="mb-2 mt-4 text-base text-black dark:text-neutral-200 sm:text-xl">
+      <div className="flex flex-grow flex-col text-center">
+        <p className="mb-2 mt-4 text-lg font-semibold text-black dark:text-neutral-200 sm:text-xl">
           {product.title}
         </p>
         <p className="pb-4 text-sm text-neutral-600 dark:text-neutral-400">
@@ -36,7 +37,7 @@ export default function ProductCard({ product }: ProductCardProps) {
         </p>
       </div>
       <button
-        className="mt-auto transform rounded-full bg-orange px-8 py-2 font-bold tracking-widest text-white transition-transform duration-200 hover:scale-105 hover:bg-btnHover sm:px-10 md:px-12 lg:px-16"
+        className="mx-auto mt-auto flex w-full items-center justify-center rounded-full bg-orange px-6 py-2 font-bold tracking-widest text-white transition-transform duration-200 hover:scale-105 hover:bg-btnHover sm:px-8 md:px-10 lg:px-12"
         onClick={handleOpenDialog}
       >
         Get Quotes
@@ -65,7 +66,7 @@ const ProductList = () => {
         {machineryProducts.map((product) => (
           <div
             key={product.id}
-            className="w-full p-2 text-center sm:w-1/2 md:w-1/2 lg:w-1/5"
+            className="w-full p-2 text-center sm:w-1/2 md:w-1/3 lg:w-1/5"
           >
             <ProductCard product={product} />
           </div>
@@ -79,7 +80,7 @@ const ProductList = () => {
         {clayItems.map((product) => (
           <div
             key={product.id}
-            className="w-full p-2 text-center sm:w-1/2 md:w-1/2 lg:w-1/5"
+            className="w-full p-2 text-center sm:w-1/2 md:w-1/3 lg:w-1/5"
           >
             <ProductCard product={product} />
           </div>
@@ -93,7 +94,7 @@ const ProductList = () => {
         {ceramicProducts.map((product) => (
           <div
             key={product.id}
-            className="w-full p-2 text-center sm:w-1/2 md:w-1/2 lg:w-1/5"
+            className="w-full p-2 text-center sm:w-1/2 md:w-1/3 lg:w-1/5"
           >
             <ProductCard product={product} />
           </div>
