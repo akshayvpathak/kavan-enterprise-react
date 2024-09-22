@@ -46,7 +46,7 @@ const menuData: Menu[] = [
   },
   {
     id: 4,
-    title: "Clay Items",
+    title: "Clay Products",
     newTab: false,
     submenu: [
       {

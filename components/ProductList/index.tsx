@@ -76,7 +76,7 @@ const ProductList = () => {
         ))}
       </div>
       <div className="mb-2 ml-4 mt-10 text-3xl font-bold text-charcoal">
-        Clay Items
+        Clay Products
       </div>
 
       <div className=" flex flex-wrap justify-center ">
