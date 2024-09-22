@@ -9,7 +9,7 @@ export default function Feedback() {
     <div>
       <div className="pt-4">
         <div className="mx-auto mt-4 w-fit rounded-full bg-black px-6 py-2 text-base text-zinc-50 shadow-xl">
-          ✨ Testimonials ✨
+          🔆 Testimonials 🔆
         </div>
         <h5 className="mt-3 text-center text-3xl text-neutral-700">
           Client’s Testimonials

@@ -21,14 +21,17 @@ export default function ProductCard({ product }: ProductCardProps) {
 
   return (
     <div className="mx-auto flex h-full w-full max-w-xs flex-col rounded-2xl border border-gray-200 bg-white p-4 shadow-md dark:bg-zinc-900 sm:max-w-sm md:max-w-md lg:max-w-xs">
-      <Image
-        src={product.image}
-        alt={product.alt}
-        height={300}
-        width={300}
-        className="mx-auto object-contain"
-      />
-      <div className="flex flex-grow flex-col text-center">
+      <div className="flex items-center justify-center text-center">
+        <div className="flex h-48 w-56 items-center justify-center text-center">
+          <img
+            src={product.image}
+            alt={product.alt}
+            className="object-fit mx-auto h-full w-full"
+          />
+        </div>
+      </div>
+
+      <div className="flex  flex-col text-center">
         <p className="mb-2 mt-4 text-lg font-semibold text-black dark:text-neutral-200 sm:text-xl">
           {product.title}
         </p>
@@ -56,7 +59,7 @@ const ProductList = () => {
   return (
     <div className="pt-4  md:px-32">
       <div className="l mx-auto mt-4 w-fit rounded-full bg-black px-6 py-2 text-base text-zinc-50">
-        ✨ Range Of Products ✨
+        🔆 Explore Our Product Range 🔆
       </div>
       <div className="mb-2 ml-4 mt-10 text-3xl font-bold  text-charcoal">
         Machinery Products

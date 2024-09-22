@@ -25,7 +25,7 @@ const Footer = () => {
               whileInView="visible"
               transition={{ duration: 1, delay: 0.5 }}
               viewport={{ once: true }}
-              className="animate_top w-1/2 lg:w-1/2"
+              className="animate_top w-full lg:w-1/2"
             >
               <a href="/">
                 <Image
@@ -47,12 +47,12 @@ const Footer = () => {
               <p className="mb-1.5 uppercase tracking-[5px] text-white">
                 contact
               </p>
-              <a
-                href="#"
-                className="text-itemtitle font-medium text-white hover:text-linkhover"
-              >
-                kavanparmar1212@gmail.com
-              </a>
+              <p className="no-wrap text-white">
+                <span>Kavan Parmar - +91 90169 75976</span>
+              </p>
+              <p className="text-white">
+                <span>Vinodbhai Parmar - +91 98256 36495</span>
+              </p>
             </motion.div>
 
             <div className="flex w-full flex-col gap-8 md:flex-row md:justify-between md:gap-0 lg:w-1/2 xl:w-1/2">

@@ -22,7 +22,7 @@ const Contact = () => {
       className=" mt-4  bg-mainBg px-4 pt-4 md:px-8 2xl:px-0"
     >
       <div className="mx-auto w-fit rounded-full bg-black px-6 py-2 text-base text-zinc-50 shadow-xl">
-        ✨ Contact Us ✨
+        🔆 Contact Us 🔆
       </div>
       <div className="relative mx-auto max-w-c-1390 px-10 py-7.5 lg:px-15 lg:pt-15 xl:px-20 xl:pt-20">
         <div className="absolute left-0 top-0 -z-1 h-2/3 w-full rounded-lg  "></div>
@@ -104,7 +104,7 @@ const Contact = () => {
               <div className="flex flex-wrap gap-4 xl:justify-between ">
                 <button
                   aria-label="send message"
-                  className="hover:bg-btnHover inline-flex items-center gap-2.5 rounded-full bg-orange px-6 py-3 font-medium text-white duration-300 ease-in-out"
+                  className="inline-flex items-center gap-2.5 rounded-full bg-orange px-6 py-3 font-medium text-white duration-300 ease-in-out hover:bg-btnHover"
                 >
                   Send Message
                   <svg
@@ -148,21 +148,40 @@ const Contact = () => {
             </h2>
 
             <div className="5 mb-7">
-              <h3 className="mb-4  font-medium text-charcoal ">Our Loaction</h3>
-              <p className="text-charcoal ">Thangadh</p>
+              <h3 className="mb-4  font-semibold text-charcoal ">
+                Our Loaction
+              </h3>
+              <p className="h-full w-40 text-charcoal ">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.662973407485!2d71.20298011116759!3d22.591705179392537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39590a8fe8f7e7d3%3A0x4daf87e828ea073d!2sKAVAN%20ENTERPRISE!5e0!3m2!1sen!2sin!4v1726998380623!5m2!1sen!2sin"
+                  className="border-0 sm:max-w-sm  md:max-w-md"
+                  loading="lazy"
+                ></iframe>
+              </p>
+              <p className="pt-4 text-charcoal">
+                <span>
+                  Nr. Amrut Ceramic,Haridham Society, Tarnetar road, Thangadh,
+                  363 530
+                </span>
+              </p>
             </div>
             <div className="5 mb-7">
-              <h3 className="mb-4  font-medium text-charcoal ">
+              <h3 className="mb-4  font-semibold text-charcoal ">
                 Email Address
               </h3>
-              <p className="text-charcoal hover:text-linkhover">
-                <a href="#">kavanparmar1212@gmail.com</a>
+              <p className="text-charcoal">
+                <span>kavanvparmar24@gmail.com</span>
               </p>
             </div>
             <div>
-              <h4 className="mb-4  font-medium text-charcoal ">Phone Number</h4>
-              <p className="text-charcoal hover:text-linkhover">
-                <a href="#">+91 95589 45002</a>
+              <h4 className="mb-4  font-semibold text-charcoal ">
+                Phone Number
+              </h4>
+              <p className="text-charcoal">
+                <span>Kavan Parmar - +91 90169 75976</span>
+              </p>
+              <p className="text-charcoal">
+                <span>Vinodbhai Parmar - +91 98256 36495</span>
               </p>
             </div>
           </motion.div>
