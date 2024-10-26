@@ -41,22 +41,16 @@ const Header = () => {
     >
       <div className="relative mx-auto max-w-c-1390 items-center justify-between px-4 md:px-8 xl:flex 2xl:px-0">
         <div className="flex w-full items-center justify-between xl:w-1/4">
-          <a href="/">
+          <p className="flex w-full items-center justify-start">
             <Image
-              src="/images/logo/logo.png"
+              src="/images/logo/logo-1.png"
               alt="logo"
-              width={119.03}
+              width={60}
               height={30}
-              className="hidden w-full dark:block"
+              className="h-10 object-contain dark:hidden"
             />
-            <Image
-              src="/images/logo/logo.png"
-              alt="logo"
-              width={119.03}
-              height={30}
-              className="w-full dark:hidden"
-            />
-          </a>
+            <span className="flex-1 text-2xl text-white">Kavan Enterprise</span>
+          </p>
 
           {/* <!-- Hamburger Toggle BTN --> */}
           <button
@@ -67,7 +61,7 @@ const Header = () => {
             <span className="relative block h-5.5 w-5.5 cursor-pointer">
               <span className="absolute right-0 block h-full w-full">
                 <span
-                  className={`relative left-0 top-0 my-1 block h-0.5 rounded-sm bg-linkhover delay-[0] duration-200 ease-in-out dark:bg-white ${
+                  className={`delay-[0] relative left-0 top-0 my-1 block h-0.5 rounded-sm bg-linkhover duration-200 ease-in-out dark:bg-white ${
                     !navigationOpen ? "!w-full delay-300" : "w-0"
                   }`}
                 ></span>
@@ -85,7 +79,7 @@ const Header = () => {
               <span className="du-block absolute right-0 h-full w-full rotate-45">
                 <span
                   className={`absolute left-2.5 top-0 block h-full w-0.5 rounded-sm bg-linkhover delay-300 duration-200 ease-in-out dark:bg-white ${
-                    !navigationOpen ? "!h-0 delay-[0]" : "h-full"
+                    !navigationOpen ? "delay-[0] !h-0" : "h-full"
                   }`}
                 ></span>
                 <span

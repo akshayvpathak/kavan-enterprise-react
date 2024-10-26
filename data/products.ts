@@ -153,6 +153,17 @@ export const clayItems = [
       "/images/products/dhoop-diya-cup.jpg", // Add additional images as needed
     ],
   },
+  {
+    id: 25,
+    image: "/images/products/scented-diya.jpg", // Add the appropriate image path
+    alt: "Scented Diya",
+    title: "Scented Diya",
+    description: "Fragrant scented diya for a calming atmosphere.",
+    slug: "scented-diya",
+    productImages: [
+      "/images/products/scented-diya.jpg", // Add additional images as needed
+    ],
+  },
 ];
 
 export const ceramicProducts = [

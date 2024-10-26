@@ -29,7 +29,7 @@ const Footer = () => {
             >
               <a href="/">
                 <Image
-                  src="/images/logo/logo.png"
+                  src="/images/logo/logo-1.png"
                   alt="logo"
                   width={200}
                   height={30}

@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import Contact from "@/components/Contact";
 import Feedback from "@/components/Testimonial";
 import { ProductList } from "@/components/ProductList";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Kavan Enterprise",
@@ -92,6 +93,22 @@ export default function Home() {
       <ProductList />
       <Feedback />
       <Contact />
+      <div className="relative my-8 w-full">
+        <div className="relative flex w-full justify-center">
+          <Image
+            src="/images/about/shiv.jpg"
+            alt="Make In India"
+            objectFit="cover"
+            layout="responsive"
+            width={1200}
+            height={600}
+          />
+          {/* Centered Text */}
+          <p className="absolute inset-0 flex items-end justify-center bg-black bg-opacity-30 p-4 text-3xl font-bold text-white">
+            Second Unit at Surendranagar
+          </p>
+        </div>
+      </div>
     </main>
   );
 }
