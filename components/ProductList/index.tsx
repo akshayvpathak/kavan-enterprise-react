@@ -26,7 +26,7 @@ export default function ProductCard({ product }: ProductCardProps) {
           <img
             src={product.image}
             alt={product.alt}
-            className="object-fit mx-auto h-full w-full"
+            className="mx-auto h-full w-full object-contain"
           />
         </div>
       </div>

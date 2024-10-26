@@ -1,62 +1,42 @@
 export const machineryProducts = [
   {
     id: 1,
-    image: "/images/products/achar-jar.jpeg",
+    image: "/images/products/diya-making.jpg",
     alt: "Diya Making Machine",
     title: "Diya Making Machine",
     description: "High-efficiency machine for manufacturing clay diyas.",
     slug: "diya-making-machine",
-    productImages: [
-      "/images/products/achar-jar.jpeg",
-      "/images/products/achar-jar.jpeg",
-      "/images/products/achar-jar.jpeg",
-      "/images/products/achar-jar.jpeg",
-    ],
+    productImages: ["/images/products/diya-making.jpg"],
   },
   {
     id: 2,
-    image: "/images/products/achar-jar.jpeg",
+    image: "/images/products/kulad-making.jpg",
     alt: "Kullad Making Machine",
     title: "Kullad Making Machine",
     description: "Automatic machine for creating traditional kullads.",
     slug: "kullad-making-machine",
     productImages: [
-      "/images/products/achar-jar.jpeg",
-      "/images/products/achar-jar.jpeg",
+      "/images/products/kulad-making.jpg",
+      "/images/products/kulad-making.jpg",
     ],
   },
   {
     id: 3,
-    image: "/images/products/achar-jar.jpeg",
+    image: "/images/products/surkhi.jpg",
     alt: "Suraki Machine",
     title: "Suraki Machine",
     description: "Efficient machine for producing suraki.",
     slug: "suraki-machine",
-    productImages: [
-      "/images/products/achar-jar.jpeg",
-      "/images/products/achar-jar.jpeg",
-    ],
+    productImages: ["/images/products//surkhi.jpeg"],
   },
   {
     id: 4,
-    image: "/images/products/achar-jar.jpeg",
+    image: "/images/products/hydraulik.jpg",
     alt: "Hydraulic Diya Making Machine",
     title: "Hydraulic Diya Making Machine",
     description: "Advanced hydraulic machine for manufacturing diyas.",
     slug: "hydraulic-diya-making-machine",
-    productImages: [
-      "/images/products/achar-jar.jpeg",
-      "/images/products/achar-jar.jpeg",
-    ],
-  },
-  {
-    id: 20,
-    image: "/images/products/farva.jpg",
-    alt: "Cultivator Blade",
-    title: "Cultivator Blade (Farva)",
-    description: "Durable cultivator blades for agriculture.",
-    slug: "cultivator-blade-farva",
-    productImages: ["/images/products/farva.jpg", "/images/products/farva.jpg"],
+    productImages: ["/images/products/hydraulik.jpg"],
   },
 ];
 
@@ -83,7 +63,7 @@ export const clayItems = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     image: "/images/products/matka2.jpeg",
     alt: "Mitti Bottle",
     title: "Mitti Bottle",
@@ -95,7 +75,7 @@ export const clayItems = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     image: "/images/products/mc.jpg",
     alt: "Kullad",
     title: "Kullad",
@@ -117,14 +97,61 @@ export const clayItems = [
       "/images/products/dd4.jpeg",
     ],
   },
+
   {
-    id: 19,
-    image: "/images/products/dm.jpeg",
+    id: 20,
+    image: "/images/products/ghee-diya.jpg", // Add the appropriate image path
+    alt: "Ghee Diya",
+    title: "Ghee Diya",
+    description: "Traditional ghee diya for auspicious occasions.",
+    slug: "ghee-diya",
+    productImages: [
+      "/images/products/ghee-diya.jpg", // Add additional images as needed
+    ],
+  },
+  {
+    id: 21,
+    image: "/images/products/decorative-matki.jpg", // Add the appropriate image path
     alt: "Decorative Matki",
     title: "Decorative Matki",
-    description: "Artistic decorative matkis.",
-    slug: "decorative-matki",
-    productImages: ["/images/products/dm.jpeg", "/images/products/dm2.jpeg"],
+    description: "Elegantly designed decorative matkis.",
+    slug: "decorative-matki-2",
+    productImages: [
+      "/images/products/decorative-matki.jpg", // Add additional images as needed
+    ],
+  },
+  {
+    id: 22,
+    image: "/images/products/decorative-diya-wax.jpg", // Add the appropriate image path
+    alt: "Decorative Diya (Wax)",
+    title: "Decorative Diya (Wax)",
+    description: "Wax decorative diya for special occasions.",
+    slug: "decorative-diya-wax",
+    productImages: [
+      "/images/products/decorative-diya-wax.jpg", // Add additional images as needed
+    ],
+  },
+  {
+    id: 23,
+    image: "/images/products/glaze-diya.jpg", // Add the appropriate image path
+    alt: "Glaze Diya",
+    title: "Glaze Diya",
+    description: "Beautifully glazed diyas for decor.",
+    slug: "glaze-diya",
+    productImages: [
+      "/images/products/glaze-diya.jpg", // Add additional images as needed
+    ],
+  },
+  {
+    id: 24,
+    image: "/images/products/dhoop-diya-cup.jpg", // Add the appropriate image path
+    alt: "Dhoop Diya Cup",
+    title: "Dhoop Diya Cup",
+    description: "Clay cup for burning dhoop.",
+    slug: "dhoop-diya-cup",
+    productImages: [
+      "/images/products/dhoop-diya-cup.jpg", // Add additional images as needed
+    ],
   },
 ];
 
