@@ -1,8 +1,8 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
 import {
   Dialog,
   DialogContent,
@@ -11,8 +11,6 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import { Product } from ".";
 
 interface QuoteDialogProps {
@@ -26,9 +24,41 @@ export default function QuoteDialog({
   isOpen,
   handleClose,
 }: QuoteDialogProps) {
+  useEffect(() => {
+    if (isOpen) {
+      // Load the HubSpot form script only once
+      const existingScript = document.querySelector(
+        'script[src="//js.hsforms.net/forms/embed/v2.js"]',
+      );
+      if (!existingScript) {
+        const script = document.createElement("script");
+        script.src = "//js.hsforms.net/forms/embed/v2.js";
+        script.charset = "utf-8";
+        script.type = "text/javascript";
+        document.body.appendChild(script);
+
+        // After script is loaded, initialize the form
+        script.onload = () => {
+          (window as any).hbspt?.forms.create({
+            portalId: "47887480",
+            formId: "b1570a21-da56-453d-98ac-ecfd5b4af631",
+            target: "#hubspotForm",
+          });
+        };
+      } else {
+        // If script is already loaded, just create the form
+        (window as any).hbspt?.forms.create({
+          portalId: "47887480",
+          formId: "b1570a21-da56-453d-98ac-ecfd5b4af631",
+          target: "#hubspotForm",
+        });
+      }
+    }
+  }, [isOpen]);
+
   return (
     <Dialog open={isOpen} onOpenChange={handleClose}>
-      <DialogContent className="max-w-[400px] md:max-w-[800px] ">
+      <DialogContent className="max-w-[400px] md:max-w-[800px]">
         <DialogHeader>
           <DialogTitle className="text-xl font-semibold">
             Product Quote
@@ -52,28 +82,12 @@ export default function QuoteDialog({
             </p>
           </div>
 
-          {/* Right Side: Phone Number and Submit Button */}
+          {/* Right Side: HubSpot Form */}
           <div className="flex flex-1 flex-col items-center justify-start md:items-start">
             <div className="w-full max-w-[400px]">
               <div className="grid gap-4 py-4">
-                <div className="grid items-start gap-4">
-                  <Label htmlFor="phone" className="text-left">
-                    Mobile Number
-                  </Label>
-                  <div className="col-span-3 flex items-center">
-                    <Input
-                      id="phone"
-                      type="tel"
-                      placeholder="Enter your mobile number"
-                    />
-                  </div>
-                </div>
+                <div id="hubspotForm" className="w-full" />
               </div>
-              <DialogFooter>
-                <Button variant={"orange"} type="submit" size={"lg"}>
-                  Get Quote
-                </Button>
-              </DialogFooter>
             </div>
           </div>
         </div>
